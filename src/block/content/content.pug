@@ -1,0 +1,7 @@
+mixin b-content()
+	+b.content
+		.container
+			+b-form-product(content.product, 'content')
+			+b-button-img(content.button, 'content')
+			+b-array-word(content.videoTitle, 'reviews')
+			+b-list-video(content.video, 'reviews')

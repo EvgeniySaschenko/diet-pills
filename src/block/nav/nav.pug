@@ -1,0 +1,5 @@
+mixin b-nav(items, classes)
+	+b.NAV.nav-list(class='_' + classes)
+		each item, i in items
+			+e.item(class='_' + i)
+				+e.A.link(class='_' + i, href=item.href)!=item.name

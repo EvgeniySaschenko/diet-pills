@@ -1,0 +1,12 @@
+mixin b-footer()
+	+b.footer
+		+e.top
+			+b-img(footer.logoSrc, 'logo')
+			+b-array-word(footer.title, 'title')
+			+b-nav(footer.nav, 'nav')
+		+e.middle
+			+b-text-brief(footer.warning, 'warning')
+		+e.bottom
+			+b-array-word(footer.copyright, 'copyright')
+			+b-img(footer.logoSafe, 'logo-safe')
+			+b-list-img(footer.logoPartners, 'logo-partners')

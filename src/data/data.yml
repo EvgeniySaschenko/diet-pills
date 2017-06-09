@@ -1,0 +1,125 @@
+header:
+  promoText: 
+    - 'SPECIAL DISCOUNT ACTIVATED:'
+    - 'Price savings of over 40% +'
+    - '<span class="delivery"></span> Free Shipping'
+    - 'on todays offer!'
+  title: 
+    - 'Garcinia cambogia extract capsules'
+  logoSrc: 'img/header/logo.png'
+  promoBannerSrc: 'img/header/promo-banner.png'
+content:
+  promoBannerSrc: 
+    - 'img/content/notice.png'
+  promoTapeSrc: 
+    - 'img/content/promo-tape.png'
+
+  product:
+    - effect: 
+        - 'Get Started'
+        - 'with your Introductory bottle'
+      productSrc: 'img/content/product-1.png'
+      name: 
+        - 'Starter'
+        - 'Package'
+      description: 
+        - 'Suppress your appetite and get ready for weight loss!'
+      advantages:
+        - 'Receive a 2 month supply'
+        - 'Lose up to <span class="weight">6 kg</span>'
+        - '<span class="delivery"></span> Free shipping'
+      priceInfo: 
+        - 'retail price:'
+        - 'C$49.95'
+        - '€36.95'
+        - 'per <br> bottle'
+      orderText:
+        - 'select package'
+      ratingTextStar: 'WEIGHT LOSS EFFECTIVENESS'
+      ratingValue: '2.5'
+      ratingTextAmazon: 'Ratings verified by'
+      ratingLogoSrc: 'img/content/logo-amazon.png'
+
+    - effect: 
+        - 'Maximum Slimming'
+        - 'Unleash your power within'
+      productSrc: 'img/content/product-2.png'
+      name: 
+        - 'Pro Result'
+        - 'Package'
+      description: 
+        - 'Perfect for kickstarting your weight loss plan!'
+      advantages:
+        - 'Receive a 6 month supply'
+        - 'Lose up to <span class="weight">18 kg</span>'
+        - '<span class="delivery"></span> Free shipping'
+      priceInfo: 
+        - 'retail price:'
+        - 'C$49.95'
+        - '€29.95'
+        - 'per <br> bottle'
+      orderText:
+        - 'select package'
+      ratingTextStar: 'WEIGHT LOSS EFFECTIVENESS'
+      ratingValue: '4.8'
+      ratingTextAmazon: 'Ratings verified by'
+      ratingLogoSrc: 'img/content/logo-amazon.png'
+
+
+    - effect: 
+        - 'Great Value'
+        - 'Kickstart your weight loss today'
+      productSrc: 'img/content/product-3.png'
+      name: 
+        - 'Slim Down'
+        - 'Package'
+      description: 
+        - 'Perfect for kickstarting your weight loss plan!'
+      advantages:
+        - 'Receive a 4 month supply'
+        - 'Lose up to <span class="weight">12 kg</span>'
+        - '<span class="delivery"></span> Free shipping'
+      priceInfo: 
+        - 'retail price:'
+        - 'C$49.95'
+        - '€32.95'
+        - 'per <br> bottle'
+      orderText:
+        - 'select package'
+      ratingTextStar: 'WEIGHT LOSS EFFECTIVENESS'
+      ratingValue: '3.2'
+      ratingTextAmazon: 'Ratings verified by'
+      ratingLogoSrc: 'img/content/logo-amazon.png'
+
+  button: 
+    - 'img/content/button.png'
+  videoTitle:
+    - 'REAL STORIES. REAL RESULTS'
+  video: 
+    - src: 'https://www.youtube.com/watch?v=H6G63NKRSi8'
+    - src: 'https://www.youtube.com/watch?v=H6G63NKRSi8'
+    - src: 'https://www.youtube.com/watch?v=H6G63NKRSi8'
+
+footer:
+  logoSrc: 'img/footer/logo.png'
+  title: 
+    - 'garcinia cambojia extract capsules'
+  nav:
+    - name: 'Terms and Conditions'
+      href: '#'
+    - name: 'Privacy Policy'
+      href: '#'
+    - name: 'Contact Us'
+      href: '#'
+  warning:
+    - name: 'warning'
+      description: 'The statments made on our websites have not been evaluated by the FDA (U.S. Food & Drug Administration). This product is not intended to diagnose, cure or prevent any disease. The information provided by this website or this companay is not a substitute for a face-to-face consultation with your physician, and should not be construed as indvidial medical advice. The testimonials on this website are individial cases and do not guarantee that you will get the same results.'
+  copyright:
+    - 'Copyright © 2017'
+    - 'ООО "МАстреСПА"   ИНН 104380285762   ОГРН 427602692592'
+  logoPartners: 
+    - src: 'img/footer/partners/1.png'
+    - src: 'img/footer/partners/2.png'
+    - src: 'img/footer/partners/3.png'
+    - src: 'img/footer/partners/4.png'
+  logoSafe: 'img/footer/logo-safe.png'

@@ -1,0 +1,5 @@
+mixin b-list-video(items, clsses)
+	+b.list-video(class='_' + clsses)
+		each item, i in items
+			+e.item(class='_' + i)
+				+e.IFRAME.video(src=item.src, allowfullscreen)

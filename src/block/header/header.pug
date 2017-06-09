@@ -1,0 +1,9 @@
+mixin b-header()
+	+b.header
+		+e.top
+			+b-array-word(header.promoText, 'promo-text')
+		.container
+			+e.bottom
+					+b-img(header.logoSrc, 'logo')
+					+b-array-word(header.title, 'title')
+					+b-img(header.promoBannerSrc, 'promo-banner')

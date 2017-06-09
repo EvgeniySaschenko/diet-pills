@@ -1,0 +1,6 @@
+mixin b-text-brief(items, classes)
+	+b.text-brief(class='_' + classes)
+		each item, i in items
+			+e.item(class='_' + i)
+				+e.name!=item.name
+				+e.description!=item.description
