@@ -1,24 +1,35 @@
 .form-product
+	&__info-box
+		margin-bottom 30px
 	&_content
 		display flex
 		flex-direction row
 		justify-content center
-		align-items center
+		align-items stretch
 	&__item
-		width 320px
+		width 310px
 		position relative
+		box-sizing border-box
+		margin 0 8px
 	.effect
 		color #34919f
 		position absolute
+		top 40px
+		margin-left 15px
 		&__item
 			&_0
 				font-size 18px
 				font-family RobotoCondensedBold
 			&_1
 				font-size 12px
+	.img-product
+		height 215px
+		margin-bottom 15px
 	.name
 		color #b1a78e
 		font-size 26px
+		margin-bottom 10px
+		text-align center
 		&__item
 			display inline-block
 			padding-right 10px
@@ -27,6 +38,236 @@
 	.description
 		color #b1a78e
 		font-family RobotoCondensedLight	
+		margin-bottom 10px
+		text-align center
+	.advantages
+		width 220px
+		margin 0 auto
+		font-size 18px
+	.advantages
+		&__item
+			padding 5px 0
+			line-height 1.5
+			&::before
+				content ""
+				background url(../img/content/check.png)
+				float left
+				margin-right 5px
+				width 25px
+				height 24px
+			.weight
+			&_2
+				font-family RobotoCondensedBoldItalic
+			.weight
+				color #34919f
+				text-transform uppercase
+			&_2
+				color #c82044
+				text-transform uppercase
+			.delivery
+				width 26px
+				height 17px
+				display inline-block
+				background url(../img/content/delivery-red.png)
+	.price-box
+		background url(../img/content/order-bg.png)
+		.price
+			padding-top 20px
+			display flex
+			flex-direction row
+			justify-content flex-start
+			align-items flex-start
+			flex-wrap wrap
+			&__item
+				box-sizing border-box
+				color #43625f
+				&_0
+				&_2
+					text-align right
+				&_0
+				&_1
+					font-size 16px
+					margin-bottom 10px
+					width 50%
+				&_1
+					padding-left 5px
+					position relative
+					&::before
+						content ""
+						display inline-block
+						width 62px
+						height 16px
+						position absolute
+						left 3px
+						background url(../img/content/cross-out.png)
+						background-repeat no-repeat
+				&_2
+					font-size 30px
+					margin-left 80px
+					margin-right 5px
+				&_3
+					font-size 14px
+	.order
+		display flex
+		flex-direction row
+		justify-content flex-end
+		align-items flex-start
+		&__text
+			font-family RobotoCondensedBoldItalic
+			font-size 16px
+			text-transform uppercase
+			color #43625f 
+			margin-right 10px
+		&__radio
+			display none
+		&__label
+			margin-right 10px
+			display inline-block
+			width 21px
+			height 20px
+			background url(../img/content/check-order.png)
+			background-repeat no-repeat
+		&__radio:checked + .order__label
+			background url(../img/content/check-order-active.png)
+			width 29px
+			height 29px
+			position absolute
+	.rating
+		display flex
+		flex-direction row
+		justify-content flex-end
+		align-items flex-start
+		flex-wrap wrap
+		.star-box
+			width 50%
+			padding-left 15px
+			box-sizing border-box
+		&__text-1
+			font-size 12px
+			font-family RobotoCondensedBoldItalic
+			color #a1a1a1
+		&__star
+			position relative
+			background url(../img/content/rating-star.png)
+			background-repeat no-repeat
+			width 100px
+			height 18px
+		&__value-box
+			width 50%
+			padding-right 15px
+			box-sizing border-box
+			text-align right
+		&__value
+			background #fced7a
+			border-radius 10%
+			font-size 24px
+			font-family RobotoCondensedBoldItalic
+			color #5d6062
+			display inline-block
+			padding 5px
+		.amazon-box
+			display flex
+			flex-direction row
+			justify-content flex-end
+			align-items flex-start
+			width 100%
+			box-sizing border-box
+			margin-top 10px
+			padding-bottom 15px
+			padding-top 5px
+			background url(../img/content/product-bottom-bg.png)
+		&__text-2
+			font-family RobotoCondensedItalic
+			font-size 11px
+			color #a1a1a1
+			margin-right 5px
+		&__logo
+			height 15px
+			padding-right 15px
+			
+.form-product
+	&__item.active
+		.form-product
+			&__info-box
+				background linear-gradient(to top, #ffee6d 20%, #fff 50%)
+				box-shadow 0 0 10px rgba(0,0,0,0.5)
+				padding-top 5px
+				padding-bottom 5px
+				border-radius 5px
+				position relative
+				z-index 0
+				&_top
+					position relative
+					&::before
+						box-sizing border-box
+						border 2px solid #43625f
+						border-bottom 0
+						border-radius 5px 5px 0  0
+						content ""
+						width 304px
+						height 100%
+						display inline-block
+						position absolute
+						left 3px
+						z-index -1
+					
+		.price-box
+			position relative
+			background url(../img/content/order-active-bg.png)
+			&::before
+				box-sizing border-box
+				border 2px solid #43625f
+				border-bottom 0
+				border-top 0
+				content ""
+				width 304px
+				height 100%
+				display inline-block
+				position absolute
+				left 3px
+				z-index -1
+			.price
+				&__item
+					font-family RobotoCondensedBold
+					&_0
+					&_1
+						color #ffef78
+					&_2
+						color #fff
+						font-size 36px
+					&_3
+						color #43625f
+						font-size 16px
+						background linear-gradient(to right, #fff, #43625f)
+						padding 3px 20px 3px
+						display inline-block
+		.order-box
+			width 304px
+			background #43625f
+			margin 0 auto
+			text-align right
+			.order
+				background url(../img/content/check-order-bg.png)
+				background-repeat no-repeat
+				width 217px
+				display inline-block
+				&__text
+					color #fff
+				
+			
 
-	.rating__logo
-		height 15px
+
+						
+		
+	&__item_1.active::before
+		content ""
+		width 134px
+		height 134px
+		background url(../img/content/promo-tape.png)
+		background-repeat no-repeat
+		z-index 2
+		display inline-block
+		position absolute
+		top -10px
+		left -10px
+		
