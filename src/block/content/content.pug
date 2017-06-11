@@ -1,7 +1,11 @@
 mixin b-content()
 	+b.content
 		.container
-			+b-form-product(content.product, 'content')
-			+b-button-img(content.button, 'content')
-			+b-array-word(content.videoTitle, 'reviews')
-			+b-list-video(content.video, 'reviews')
+			+b.box_1
+				+b-form-product(content.product, 'content')
+			+b.box_2
+				+b-link-img(content.button, 'content')
+			+b.box_3
+				+b-array-word(content.videoTitle, 'reviews')
+			+b.box_4
+				+b-list-video(content.video, 'reviews')

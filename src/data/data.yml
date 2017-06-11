@@ -96,9 +96,9 @@ content:
   videoTitle:
     - 'REAL STORIES. REAL RESULTS'
   video: 
-    - src: 'https://www.youtube.com/watch?v=H6G63NKRSi8'
-    - src: 'https://www.youtube.com/watch?v=H6G63NKRSi8'
-    - src: 'https://www.youtube.com/watch?v=H6G63NKRSi8'
+    - src: 'https://www.youtube.com/embed/cIbB2yFdpOs'
+    - src: 'https://www.youtube.com/embed/cIbB2yFdpOs'
+    - src: 'https://www.youtube.com/embed/cIbB2yFdpOs'
 
 footer:
   logoSrc: 'img/footer/logo.png'
@@ -112,7 +112,7 @@ footer:
     - name: 'Contact Us'
       href: '#'
   warning:
-    - name: 'warning'
+    - name: 'Warning'
       description: 'The statments made on our websites have not been evaluated by the FDA (U.S. Food & Drug Administration). This product is not intended to diagnose, cure or prevent any disease. The information provided by this website or this companay is not a substitute for a face-to-face consultation with your physician, and should not be construed as indvidial medical advice. The testimonials on this website are individial cases and do not guarantee that you will get the same results.'
   copyright:
     - 'Copyright © 2017'
