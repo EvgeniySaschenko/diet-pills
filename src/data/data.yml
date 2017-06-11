@@ -22,7 +22,6 @@ content:
       name: 
         - 'Starter'
         - 'Package'
-      description: 
         - 'Suppress your appetite and get ready for weight loss!'
       advantages:
         - 'Receive a 2 month supply'
@@ -33,12 +32,16 @@ content:
         - 'C$49.95'
         - '€36.95'
         - 'per <br> bottle'
-      orderText: 'select package'
+      orderText: 
+        - 'select package'
       ratingStarSrc: 'img/content/rating-star-1.png'
-      ratingTextStar: 'WEIGHT LOSS EFFECTIVENESS'
-      ratingValue: '2.5'
-      ratingTextAmazon: 'Ratings verified by'
-      ratingLogoSrc: 'img/content/logo-amazon.png'
+      ratingStarText: 
+        - 'WEIGHT LOSS EFFECTIVENESS'
+      ratingStarValue: 
+        - '2.5'
+      ratingSellerText: 
+        - 'Ratings verified by'
+      ratingSellerLogoSrc: 'img/content/logo-amazon.png'
 
     - effect: 
         - 'Maximum Slimming'
@@ -47,7 +50,6 @@ content:
       name: 
         - 'Pro Result'
         - 'Package'
-      description: 
         - 'Perfect for kickstarting your weight loss plan!'
       advantages:
         - 'Receive a 6 month supply'
@@ -58,12 +60,16 @@ content:
         - 'C$49.95'
         - '€29.95'
         - 'per <br> bottle'
-      orderText: 'select package'
+      orderText: 
+        - 'select package'
       ratingStarSrc: 'img/content/rating-star-2.png'
-      ratingTextStar: 'WEIGHT LOSS EFFECTIVENESS'
-      ratingValue: '4.8'
-      ratingTextAmazon: 'Ratings verified by'
-      ratingLogoSrc: 'img/content/logo-amazon.png'
+      ratingStarText: 
+        - 'WEIGHT LOSS EFFECTIVENESS'
+      ratingStarValue: 
+        - '4.8'
+      ratingSellerText: 
+        - 'Ratings verified by'
+      ratingSellerLogoSrc: 'img/content/logo-amazon.png'
 
 
     - effect: 
@@ -73,7 +79,6 @@ content:
       name: 
         - 'Slim Down'
         - 'Package'
-      description: 
         - 'Perfect for kickstarting your weight loss plan!'
       advantages:
         - 'Receive a 4 month supply'
@@ -84,12 +89,16 @@ content:
         - 'C$49.95'
         - '€32.95'
         - 'per <br> bottle'
-      orderText: 'select package'
+      orderText: 
+        - 'select package'
       ratingStarSrc: 'img/content/rating-star-3.png'
-      ratingTextStar: 'WEIGHT LOSS EFFECTIVENESS'
-      ratingValue: '3.2'
-      ratingTextAmazon: 'Ratings verified by'
-      ratingLogoSrc: 'img/content/logo-amazon.png'
+      ratingStarText: 
+        - 'WEIGHT LOSS EFFECTIVENESS'
+      ratingStarValue: 
+        - '3.2'
+      ratingSellerText: 
+        - 'Ratings verified by'
+      ratingSellerLogoSrc: 'img/content/logo-amazon.png'
 
   button: 
     - 'img/content/button.png'

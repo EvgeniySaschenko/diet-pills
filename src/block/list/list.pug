@@ -1,0 +1,4 @@
+mixin b-list(items, clsses)
+	+b.UL.list(class="_" + clsses)
+		each item, i in items
+			+e.LI.item(class='_' + i)!=item
