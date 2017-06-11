@@ -18,17 +18,17 @@ mixin b-form-product(items, clsses)
 						+b-array-word(item.priceInfo, 'price-info')
 						// Радиокнопка
 						+b.order-box
-							+b.order
-								+e.text!= item.orderText
-								+e.INPUT.radio(type="radio", name="radio", id="order" + i)
-								+e.LABEL.label(for="order" + i)
+							+b-array-word(item.orderText, 'order')
+							+b-radio-sample('order', i)
 
-
-				.info-box-2
-					// Рейтинг
-					+b-array-word(item.ratingStarText, 'rating-star-text')
-					+b-img(item.ratingStarSrc, 'rating-star')
-					+b-array-word(item.ratingStarValue, 'rating-star-value')
+				+b.info-box-2
+					+e.col_1
+						// Рейтинг
+						+b-array-word(item.ratingStarText, 'rating-star-text')
+						+b-img(item.ratingStarSrc, 'rating-star')
+					+e.col_2
+						+b-array-word(item.ratingStarValue, 'rating-star-value')
 					// Продавец
-					+b-array-word(item.ratingSellerText, 'rating-seller-text')
-					+b-img(item.ratingSellerLogoSrc, 'rating-seller-logo')
+					+e.col_3
+						+b-array-word(item.ratingSellerText, 'rating-seller-text')
+						+b-img(item.ratingSellerLogoSrc, 'rating-seller-logo')

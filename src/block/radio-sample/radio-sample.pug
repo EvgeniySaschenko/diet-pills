@@ -1,0 +1,4 @@
+mixin b-radio-sample(clsses, couter)
+	+b.radio-sample(class="_" + clsses)
+		+e.INPUT.radio(type="radio", name="radio", id="order" + couter)
+		+e.LABEL.label(for="order" + couter)
