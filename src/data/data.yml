@@ -132,3 +132,11 @@ footer:
     - src: 'img/footer/partners/3.png'
     - src: 'img/footer/partners/4.png'
   logoSafe: 'img/footer/logo-safe.png'
+
+popup: 
+  - src: 'img/popup/popup-baner.png'
+    href: '#'
+  - src: 'img/popup/popup-baner.png'
+    href: '#'
+  - src: 'img/popup/popup-baner.png'
+    href: '#'

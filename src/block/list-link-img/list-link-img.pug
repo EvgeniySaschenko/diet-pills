@@ -1,0 +1,6 @@
+mixin b-list-link-img(items, clsses)
+	+b.list-link-img(class="_" + clsses)
+		each item, i in items
+			+e.item(class='_' + i)
+				+e.A.link(href=item.href, class='_' + i)
+					+e.IMG.img(src=item.src, class='_' + i, alt="img")
