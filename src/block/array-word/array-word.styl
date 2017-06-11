@@ -27,16 +27,15 @@
 				&__item_3
 					color #fff
 					
+	.array-word
 		&_title
 			font-family RobotoCondensedItalic
 			font-size 16px
 			color #4a6662
 			white-space nowrap
-			position relative
 			.array-word
 				&__item
-					position absolute
-					top 15px
+					padding-top 15px
 
 .content
 	.form-product	
@@ -149,6 +148,44 @@
 			font-size 24px
 			color #a21f28
 			padding-top 40px
+
+	// Активный пункт	
+	.form-product
+		&__item.active
+			
+			.array-word
+				&_effect
+					top 38px
+					
+			.array-word
+				&_name
+					.array-word	
+						&__item
+							&_0
+							&_1
+								color #43625f
+					
+			.array-word
+				&_price-info
+					width 170px
+					text-align center
+					.array-word	
+						&__item
+							&_0
+							&_1
+								color #ffef78
+							&_2
+								color #fff
+								font-size 36px
+							&_3
+								color #43625f
+								font-size 16px
+								background linear-gradient(to right, #fff, #43625f)
+								padding 0 10px 0
+								display inline-block
+							&_2
+							&_3
+								font-family RobotoCondensedBold
 			
 .footer
 	.array-word

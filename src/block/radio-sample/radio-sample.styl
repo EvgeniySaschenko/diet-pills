@@ -1,17 +1,26 @@
 .content
-	.radio-sample
-		&_order
-			display inline-block
+	.form-product
 		.radio-sample
-			&__radio
-				display none
-			&__label
-				margin-right 10px
+			&_order
 				display inline-block
-				width 29px
-				height 29px
-				background url(../img/content/check-order.png)
-				background-repeat no-repeat
-				background-position bottom left
-				position relative
-				bottom -5px
+			.radio-sample
+				&__radio
+					display none
+				&__label
+					margin-right 10px
+					display inline-block
+					width 29px
+					height 29px
+					background url(../img/content/check-order.png)
+					background-repeat no-repeat
+					background-position bottom left
+					position relative
+					bottom -5px
+	// Активный				
+	.form-product
+		&__item.active
+			.radio-sample
+				&_order
+				.radio-sample
+					&__radio:checked + .radio-sample__label
+						background url(../img/content/check-order-active.png)

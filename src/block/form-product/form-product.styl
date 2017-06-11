@@ -6,6 +6,7 @@
 			flex-direction row
 			justify-content space-between
 			align-items flex-start
+			flex-wrap wrap
 			.form-product
 				&__item
 					width 310px
@@ -21,7 +22,7 @@
 					border-radius 0 0 3px 3px
 					position relative
 					z-index 1
-					padding-bottom 10px
+					padding-bottom 5px
 					&::before
 						content ""
 						background url(../img/content/price-bg.png)
@@ -32,6 +33,73 @@
 						z-index -1
 					.order-box
 						text-align right
+// Активный						
+.content
+	.form-product
+		&_content
+			.form-product
+				&__item.active
+					&::before
+						content ""
+						width 134px
+						height 134px
+						background url(../img/content/promo-tape.png)
+						background-repeat no-repeat
+						z-index 5
+						display inline-block
+						position absolute
+						top -10px
+						left -10px
+					&::after
+						content ""
+						width 340px
+						height 76px
+						background url(../img/content/woman-says.png)
+						background-repeat no-repeat
+						z-index 5
+						display inline-block
+						position absolute
+						top -40px
+						right -190px
+
+
+
+					.outline
+						position relative
+						&::before
+							content ""
+							position absolute
+							top 6px
+							left 4px
+							width 302px
+							box-sizing border-box
+							height 100%
+							border 2px solid #43625f
+							border-bottom 0
+							border-radius 5px 5px 0  0
+							z-index 1
+
+					.info-box-1
+						background linear-gradient(to top, #ffee6d 20%, #fff 50%)
+						box-shadow 0 0 10px rgba(0,0,0,0.5)
+						border-radius 3px
+						padding-bottom 5px
+						&__middle
+						&__bottom
+							background transparent
+						&__bottom
+							padding-bottom 0
+							&::before
+								background url(../img/content/price-active-bg.png)
+							.order-box
+								background-image url(../img/content/check-order-bg.png)
+								background-position right top
+								background-repeat no-repeat
+								padding-bottom 5px
+
+
+
+
 			.info-box-2
 				display flex
 				flex-direction row
@@ -54,3 +122,33 @@
 					flex-direction row
 					justify-content flex-end
 					align-items flex-start
+					
+
+@media tablet
+	.content
+		.form-product
+			&_content
+				justify-content center
+				.form-product
+					&__item
+						margin 0 10px
+					&__item:nth-child(2)
+						order -1
+						
+@media phone		
+	.content
+		.form-product
+			&_content
+				.form-product
+					&__item
+						margin-bottom 20px
+
+// Активный		
+@media phone		
+	.content
+		.form-product
+			&_content
+				.form-product
+					&__item.active
+						&::after
+							display none

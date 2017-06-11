@@ -3,16 +3,17 @@ mixin b-form-product(items, clsses)
 		each item, i in items
 			+e.item(class='_' + i)
 				+b.info-box-1
-					+e.top
-						// Эффект
-						+b-array-word(item.effect, 'effect')
-						// Продукт
-						+b-img(item.productSrc, 'product')
-					+e.middle
-						// Название
-						+b-array-word(item.name, 'name')
-						// Приимущества
-						+b-list(item.advantages, 'advantages')
+					.outline
+						+e.top
+							// Эффект
+							+b-array-word(item.effect, 'effect')
+							// Продукт
+							+b-img(item.productSrc, 'product')
+						+e.middle
+							// Название
+							+b-array-word(item.name, 'name')
+							// Приимущества
+							+b-list(item.advantages, 'advantages')
 					+e.bottom
 						// Цена
 						+b-array-word(item.priceInfo, 'price-info')

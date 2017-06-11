@@ -8,4 +8,38 @@
 			flex-direction row
 			justify-content space-between
 			align-items flex-start
+			flex-wrap wrap
 			margin-bottom 40px
+			.box
+				&__col_1
+				&__col_2
+					width 50%
+				&__col_1
+					display flex
+					flex-direction row
+					justify-content flex-start
+					align-items flex-start
+					flex-wrap wrap
+					position relative
+					z-index 1
+					
+@media tablet
+	.header
+		.box
+			&_2
+				.box
+					&__col_1
+						flex-direction column
+						
+@media phone
+	.header
+		.box
+			&_2
+				.box
+					flex-direction column
+					&__col_1
+						width 100%
+						margin-bottom 10px
+						align-items center
+					&__col_2
+						width 100%

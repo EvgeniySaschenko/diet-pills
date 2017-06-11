@@ -1,8 +1,17 @@
-.list-video
-	display flex
-	flex-direction row
-	justify-content space-between
-	align-items flex-start
-	margin-bottom 30px
-	&__item
-		width 305px
+.content
+	.list-video
+		display flex
+		flex-direction row
+		justify-content space-between
+		align-items flex-start
+		flex-wrap wrap
+		margin-bottom 30px
+		&__item
+			width 305px
+		
+@media tablet
+	.content
+		.list-video
+			justify-content center
+			&__item
+				margin 5px
