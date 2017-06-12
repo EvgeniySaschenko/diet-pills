@@ -8,7 +8,7 @@ const yamlData = require('gulp-yaml-data');
 const concat = require('gulp-concat');
 const spritesmith = require('gulp.spritesmith');
 const csso = require('gulp-csso');
-
+const uglify = require('gulp-uglify');
 
 
 // Сервер - при изменениях файлов в заданных папках обновляет страницу в браузере
@@ -55,7 +55,7 @@ gulp.task('coffee', () => {
 	return gulp.src('src/**/*.coffee')
 	.pipe(coffee())
 	.pipe(concat('bandle.js'))
-	//.pipe(uglify())
+	.pipe(uglify())
 	.pipe(gulp.dest('build/js/'));
 });
 

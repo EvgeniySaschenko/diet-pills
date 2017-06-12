@@ -10,11 +10,11 @@ $(document).ready ()->
 		$(this).parents('.form-product__item').addClass('active')
 		# Анимация
 		tl = new TimelineMax()
-		tl.to('.form-product__item.active', 1, { opacity: 0.5 })
+		tl.to('.form-product__item.active', 0.5, { opacity: 0.6 })
+		tl.to('.form-product__item.active', 1, { opacity: 1 })
 
-
-	$('.wrapper.home').mouseleave ()->
-		if !$(this).hasClass('popup-true')
+	$('.header').mouseleave ()->
+		if !$('.wrapper.home').hasClass('popup-true')
 			height = $(window).height()
 			width = $(window).width()
 			$('.wrapper.home').addClass('popup-true')
