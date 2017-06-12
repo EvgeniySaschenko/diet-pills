@@ -9,7 +9,6 @@ const concat = require('gulp-concat');
 const spritesmith = require('gulp.spritesmith');
 const csso = require('gulp-csso');
 const uglify = require('gulp-uglify');
-const imagemin = require('gulp-imagemin');
 
 
 
