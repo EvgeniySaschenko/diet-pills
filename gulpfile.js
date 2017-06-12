@@ -9,6 +9,8 @@ const concat = require('gulp-concat');
 const spritesmith = require('gulp.spritesmith');
 const csso = require('gulp-csso');
 const uglify = require('gulp-uglify');
+const imagemin = require('gulp-imagemin');
+
 
 
 // Сервер - при изменениях файлов в заданных папках обновляет страницу в браузере
@@ -71,11 +73,11 @@ gulp.task('copy', () => {
 
 // SPRITE
 gulp.task('sprite', function () {
-  var spriteData = gulp.src('src/assets/img/sprites/*.png').pipe(spritesmith({
-    imgName: 'sprite.png',
-    cssName: 'sprite.css'
-  }));
-  return spriteData.pipe(gulp.dest('build/modules/sprite'));
+	var spriteData = gulp.src('src/assets/img/sprites/*.png').pipe(spritesmith({
+		imgName: 'sprite.png',
+		cssName: 'sprite.css'
+	}));
+	return spriteData.pipe(gulp.dest('build/modules/sprite'));
 });
 
 

@@ -19,6 +19,7 @@
     "gulp-uglify": "^2.1.2",
     "gulp-yaml-data": "^0.2.0",
     "gulp.spritesmith": "^6.5.0",
+    "imagemin": "^5.3.1",
     "stylus": "^0.54.5"
   },
   "scripts": {
