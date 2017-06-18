@@ -48,7 +48,7 @@
 						text-align right
 // Активный
 @keyframes infoBoxShadow
-	form
+	from
 		border-radius 0
 		box-shadow 0 0 10px rgba(0, 0, 0, .1),
 								0 -200px 140px -35px rgb(255, 238, 109, .1) inset
@@ -58,7 +58,7 @@
 								0 -200px 140px -35px rgb(255, 238, 109, 1) inset
 								
 @keyframes infoBoxBorder
-	form
+	from
 		border-color rgba(67, 98, 95, 0)
 	to
 		border-color rgba(67, 98, 95, 1)
@@ -98,6 +98,7 @@
 							border-radius 5px 5px 0  0
 							z-index 1
 							border 2px solid rgba(67, 98, 95, 0)
+							border-bottom 0 solid rgba(67, 98, 95, 0)
 							animation infoBoxBorder .8s forwards
 
 					.info-box-1

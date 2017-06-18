@@ -23,6 +23,11 @@
 	src url(../font/RobotoCondensed/roboto-condensed.regular.ttf)
 	
 body
+html
+	position relative
+	height 100%
+
+body
 	font-size fontSizeBase
 	font-family RobotoCondensedRegular
 	background #fbfce2
@@ -40,21 +45,6 @@ a
 	
 .wrapper.home
 	background url(../img/site-bg.png)
-
-.wrapper.popup
-	background url(../img/popup/popup-bg.png)
-	background-size cover
-	position relative
-	
-	&::before
-		display table
-		content ""
-		display inline-block
-		width 100%
-		height 100%
-		position absolute
-		z-index 1
-		background rgba(0, 0, 0, 0.8)
 
 @media tablet
 	.container

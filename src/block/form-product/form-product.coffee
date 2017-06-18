@@ -8,21 +8,24 @@ $(document).ready ()->
 		# Добавляет класс активному элементу
 		$('.form-product__item').removeClass('active')
 		$(this).parents('.form-product__item').addClass('active')
-		if false	
-			# Анимация
-			tl = new TimelineMax()
-			tl.to('.form-product__item.active', 0.5, { opacity: 0.6 })
-			tl.to('.form-product__item.active', 1, { opacity: 1 })
 			
-	# Popup	
-	if false
-		$('.header').mouseleave ()->
-			date = new Date()
-			seconds = date.getSeconds()
-			minutes = date.getMinutes()
-			hours = date.getHours()
-			popupTimeLife = seconds + minutes * 60  + hours * 60 * 60
 
-			if popupTimeLife >= $.cookie('popup') || $.cookie('popup') == undefined || !$.cookie('popup')
-				$.cookie('popup', popupTimeLife + 60)
-				location.href = 'popup.html'
+
+	window.arrMove = []
+	$('body').on "mousemove", (event) => 
+			# Добавляет в массив позицию на которой находится мышь
+			window.arrMove.unshift(event.pageY)
+			# Оставляет в массиве последние 30 позиций
+			window.arrMove.splice(30, 1)
+
+	# Popup	
+	$('.header').mouseleave ()->
+
+		activePopup = $(this).hasClass('active-popup')
+
+		if window.arrMove[0] <= window.arrMove[5] <= window.arrMove[10]
+			mouseUp = true
+
+		if !activePopup && mouseUp
+			$('.popup').addClass('active')
+			$(this).addClass('active-popup')
