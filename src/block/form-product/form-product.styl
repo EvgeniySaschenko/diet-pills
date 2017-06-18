@@ -46,7 +46,23 @@
 						z-index -1
 					.order-box
 						text-align right
-// Активный						
+// Активный
+@keyframes infoBoxShadow
+	form
+		border-radius 0
+		box-shadow 0 0 10px rgba(0, 0, 0, .1),
+								0 -200px 140px -35px rgb(255, 238, 109, .1) inset
+	to
+		border-radius 3px
+		box-shadow 0 0 10px rgba(0, 0, 0, .5),
+								0 -200px 140px -35px rgb(255, 238, 109, 1) inset
+								
+@keyframes infoBoxBorder
+	form
+		border-color rgba(67, 98, 95, 0)
+	to
+		border-color rgba(67, 98, 95, 1)
+		
 .content
 	.form-product
 		&_content
@@ -78,16 +94,16 @@
 							width 302px
 							box-sizing border-box
 							height 100%
-							border 2px solid #43625f
 							border-bottom 0
 							border-radius 5px 5px 0  0
 							z-index 1
+							border 2px solid rgba(67, 98, 95, 0)
+							animation infoBoxBorder .8s forwards
 
 					.info-box-1
-						background linear-gradient(to top, #ffee6d 20%, #fff 50%)
-						box-shadow 0 0 10px rgba(0,0,0,0.5)
-						border-radius 3px
 						padding-bottom 5px
+						background rgba(255, 255, 255, 1)
+						animation infoBoxShadow .6s forwards
 						&__middle
 						&__bottom
 							background transparent
@@ -100,8 +116,6 @@
 								background-position right top
 								background-repeat no-repeat
 								padding-bottom 5px
-
-
 
 
 			.info-box-2
